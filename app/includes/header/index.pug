@@ -1,0 +1,18 @@
+mixin header()
+  header.header
+    nav.header__desktop
+      a.header__logo(href="/")
+        img(src= "img/logo.svg" alt="Logo")
+
+      ul.header__menu
+        li.header__menu-item
+          a(href="#").header__menu-link About Us
+        li.header__menu-item
+          a(href="#").header__menu-link Green Spins
+        li.header__menu-item
+          a(href="#").header__menu-link VIPS for Trees
+        li.header__menu-item
+          a(href="#").header__menu-link FAQ
+
+      .header__button
+        +button(href="#") Impressario

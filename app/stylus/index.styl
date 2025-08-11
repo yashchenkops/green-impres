@@ -1,0 +1,245 @@
+@import "base/_global"
+@import "base/_animation.styl"
+
+.page-section--intro
+  position relative
+  height 1300px
+
+  .page-section__column--title
+    position absolute
+    top 480px
+    margin-left 60px
+    z-index 10
+
+    .section-title
+      font-weight 900
+      font-size 64px
+      line-height 0.875
+      color #419d59
+      max-width 610px
+
+    .section-message
+      font-weight 400
+      font-size 55px
+      line-height 1
+      color #555
+      max-width 610px
+      margin-left 30px
+
+  .page-section__column--illustration
+    position relative
+
+    .illustration
+      position absolute
+
+    .illustration__background
+      top 0
+      right 0
+      float-animation(5s, 0s)
+
+    .illustration__castle
+      top 130px
+      right -70px
+      float-animation(6.5s, 0.5s, true)
+
+    .illustration__cloud-small
+      top 370px
+      right -50px
+      float-animation(7s, 0.2s)
+
+    .illustration__impressario
+      top 250px
+      right 80px
+      float-animation(6s, 0.3s, true)
+
+    .illustration__scrolling
+      top 85vh
+      left 50%
+      z-index 11
+
+      .scrolling__text
+        font-weight 500
+        font-size 13px
+        text-align center
+        color #555
+        margin-bottom 10px
+
+.page-section--about
+  .page-section__inner
+    position relative
+
+    .illustration__cloud-big
+      position absolute
+      top -490px
+      right -370px
+      float-animation(8s, 0.4s)
+
+    .illustration__cloud-left
+      position absolute
+      top -540px
+      left -370px
+      float-animation(6.5s, 0.5s, true)
+
+  .page-section__wrapper
+    position relative
+    z-index 1
+
+    .section-title
+      font-weight 900
+      font-size 64px
+      line-height 1.5
+      color #419d59
+      text-align center
+      margin-bottom 15px
+
+    .section-message
+      font-weight 500
+      font-size 24px
+      line-height 1.6
+      text-align center
+      color #4e4e4e
+
+  .page-section__column--steps
+    .steps__item
+      position relative
+
+      .steps__info
+        position absolute
+        max-width 754px
+        width 100%
+
+      &:first-child
+        margin-top -100px
+
+        .steps__info
+          top 370px
+          right -80px
+
+      &:nth-child(2)
+        margin-top 100px
+
+        .steps__info
+          top -160px
+          left 100px
+
+        .steps__image
+          img
+            max-width 100%
+            width 100%
+
+    .steps__info
+      &-title
+        margin-bottom 10px
+
+      &-action
+        font-family $fontTitle
+        font-weight 500
+        font-size 32px
+        line-height 1.6
+        color #4e4e4e
+
+      &-name
+        font-weight 900
+        font-size 32px
+        line-height 1.6
+        color #419d59
+
+      &-text
+        padding 33px 42px
+        font-weight 500
+        font-size 24px
+        line-height 1.6
+        text-align center
+        color #4e4e4e
+        border-radius 20px
+        border 1px solid rgba(65, 108, 56, 0.6)
+
+    .steps__logo
+      display flex
+      justify-content center
+      align-items center
+      gap 50px
+      margin-bottom 50px
+
+    .steps__text
+      font-weight 500
+      font-size 22px
+      line-height 1.6
+      text-align center
+      color #4e4e4e
+
+      &:first-of-type
+        margin-bottom 30px
+
+      &:last-of-type
+        padding-bottom 100px
+
+.page-section--faq
+  background-color #fff
+  padding 100px 0
+
+  .page-section__column--title
+    margin-bottom 55px
+  
+    .section-title
+      font-weight 700
+      font-size 48px
+      color #347244
+      text-align center
+      margin-bottom 35px
+
+    .section-message
+      font-weight 400
+      font-size 22px
+      text-align center
+      color #4f4f4f
+
+  .page-section__column--accordion
+     margin 0 auto
+
+    .ac
+      border none
+      margin-top 40px
+      background-color transparent
+
+      &:first-child
+        margin-top 0
+
+      .ac-trigger
+        font-family $font
+        font-weight 700
+        font-size 22px
+        color #4f4f4f
+        border-bottom 1px solid #4f4f4f
+        padding 8px 40px 8px 0
+        
+        &::after
+          content ''
+          background url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDIwIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC42ODc3IDguMzQ4NDVDMTAuMzAyIDguNzEzODUgOS42OTc5NSA4LjcxMzg1IDkuMzEyMjYgOC4zNDg0NUwwLjUgMEw5LjQwODc4IDYuNTMwODZDOS43NjA3MiA2Ljc4ODg2IDEwLjIzOTMgNi43ODg4NiAxMC41OTEyIDYuNTMwODZMMTkuNSAwTDEwLjY4NzcgOC4zNDg0NVoiIGZpbGw9IiNDOTM3MjEiLz4KPC9zdmc+Cg==") no-repeat
+          background-size cover
+          width 19px
+          height 9px
+          transition all .3s
+
+      &.is-active
+        & > .ac-header
+          .ac-trigger::after
+            transform rotate(-180deg)
+            content ''
+
+      .ac-panel
+        .ac-text
+          font-family $font
+          font-weight 400
+          font-size 22px
+          line-height 1.7
+          color #4f4f4f
+          padding 20px 0 0 0
+
+@media screen and (max-height: 825px)
+  .illustration__scrolling
+    top 700px !important
+
+@media screen and (min-height: 1285px)
+  .illustration__scrolling
+    top 1030px !important

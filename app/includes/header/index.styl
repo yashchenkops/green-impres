@@ -1,0 +1,35 @@
+.header
+  position absolute
+  width 100%
+  padding 39px 15px
+  z-index 100
+
+  &__desktop
+    display flex
+    align-items center
+    justify-content space-between
+    max-width 1540px
+    padding 0 20px
+    margin 0 auto
+    column-gap 30px
+
+  &__logo
+    max-width 381px
+
+    img
+      width 100%
+      pointer-events none
+      user-select none
+
+  &__menu
+    display flex
+    align-items center
+    gap 40px
+
+    &-link
+      color #555
+      font-size 22px
+      font-weight 500
+
+      &:hover
+        text-decoration underline
