@@ -13,7 +13,7 @@ block scripts
   script(src="scripts/index.js")
 
 block main
-  section.page-section.page-section--intro
+  section.page-section.page-section--intro#intro
     .page-section__inner
       .page-section__column.page-section__column--title
         h1.section-title Our spirit grows serene
@@ -32,7 +32,7 @@ block main
           p.scrolling__text scrolling
           img(src="img/scrolling.svg" alt="Scrolling")
 
-  section.page-section.page-section--about
+  section.page-section.page-section--about#about
     .page-section__inner
       .page-section__column.page-section__column--illustration
         .illustration__cloud-big
@@ -43,7 +43,7 @@ block main
         h2.section-title About Us
         p.section-message Online casinos are associated with fun, excitement and pure adrenaline. But Impressario believes there should be more in life than the red and black of the roulette. Like, for example, the green of the environment. This is why we have launched our Corporate Social Responsibility Program “Greenmpressario”, where, with the help of our beloved players, we do something good for our planet. Read about Greenmpressario’s twin actions and how they help make a difference for a greener world, below.
       .page-section__column.page-section__column--steps
-        .steps__item
+        .steps__item#green-spins
           .steps__image
             img(src="img/about-image-1.webp" alt="Green spin")
           .steps__info
@@ -51,7 +51,7 @@ block main
               span.steps__info-action Action 01:
                 span.steps__info-name  Green Spins
             p.steps__info-text This is a pledge from Impressario Casino to donate 10 cents for every €100 of deposits made by our players to The Nature Conservancy* organization. Since 10 cents is usually the minimum amount of a free spin, we call this amount a “Green Spin”. So, next time you go for the slots’ wilds, you will also protect the wild life. With Green Spins, the planet wins.
-        .steps__item
+        .steps__item#vips-for-trees
           .steps__info
             .steps__info-title
               span.steps__info-action Action 02:
@@ -59,6 +59,8 @@ block main
             p.steps__info-text This is a pledge from Impressario Casino to donate 10 cents for every €100 of deposits made by our players to The Nature Conservancy* organization. Since 10 cents is usually the minimum amount of a free spin, we call this amount a “Green Spin”. So, next time you go for the slots’ wilds, you will also protect the wild life. With Green Spins, the planet wins.
           .steps__image
             img(src="img/about-image-2.webp" alt="Green spin")
+          .steps__image.steps__image--mobile
+            img(src="img/about-image-2-mobile.webp" alt="Green spin")
 
         .steps__logo
           .steps__logo-item
@@ -69,7 +71,7 @@ block main
         p.steps__text *The Nature Conservancy is a global environmental nonprofit working to create a world where people and nature can thrive. Founded in the U.S. through grassroots action in 1951, it has grown to become one of the most effective and wide-reaching environmental organizations in the world.
         p.steps__text **Tree Nation allows citizens and companies to plant trees all around the world and offset their CO2 emissions. Thanks to its reforestation and conservation projects, Tree Nation helps to restore forests, create jobs, support local communities and protect biodiversity.
 
-  section.page-section.page-section--faq
+  section.page-section.page-section--faq#faq
     .page-section__inner
       .page-section__column.page-section__column--title
         h2.section-title FAQ
@@ -153,4 +155,4 @@ block main
             p.ac-text We would love that! But we’d also love to stay in business. So, for now, VIPs get the roots, everyone gets the Green Spins, and the planet gets the love.
 
       .page-section__column.page-section__column--button
-        +button(href="#") Impressario
+        +button(href="https://impressario.partners/") Impressario

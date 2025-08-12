@@ -109,6 +109,7 @@
         width 50vw
 
       &:first-child
+        scroll-margin-top -300px
         margin-top -100px
 
         .steps__image
@@ -119,16 +120,20 @@
           right 0
 
       &:nth-child(2)
-        margin-top 100px
+        scroll-margin-top 100px
+        padding-top 100px
 
         .steps__info
-          top -160px
+          top -60px
           left 100px
 
         .steps__image
           img
             max-width 100%
             width 100%
+
+          &--mobile
+            display none
 
     .steps__info
       &-title
@@ -182,6 +187,7 @@
 .page-section--faq
   background-color #fff
   padding 100px 0
+  scroll-margin-top -80px
 
   .page-section__column--title
     margin-bottom 55px
