@@ -107,7 +107,7 @@
       .steps__info
         position absolute
         max-width 754px
-        width 100%
+        width 50vw
 
       &:first-child
         margin-top -100px
@@ -162,6 +162,7 @@
       display flex
       justify-content center
       align-items center
+      flex-wrap wrap
       gap 50px
       margin-bottom 50px
 
@@ -235,10 +236,27 @@
         .ac-text
           font-family $font
           font-weight 400
-          font-size 22px
+          font-size 20px
           line-height 1.5
           color #4f4f4f
           padding 20px 0 0 0
+
+        .ac-text__list
+          padding-left 10px
+
+          &-item
+            list-style disc
+            display list-item
+            font-family $font
+            font-weight 400
+            font-size 16px
+            line-height 1.5
+            color #4f4f4f
+            padding 5px 0 0 10px
+
+            &::marker
+              content: "•"
+              color currentColor
 
 @media screen and (max-height: 825px)
   .illustration__scrolling

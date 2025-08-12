@@ -1,5 +1,5 @@
 @media (max-width 1248px)
-  .page-section.page-section--intro
+  .page-section--intro
     height 820px
 
     .page-section__column--title
@@ -75,10 +75,18 @@
 
         .steps__info
           position static
+          width 100%
+
+          &--text
+            font-size 20px
 
         &:first-child
           .steps__image
             margin-left 0
+            margin-left -100px
+
+            img
+              max-width 140%
 
           .steps__info
             margin-top -80px
@@ -87,22 +95,33 @@
           flex-direction column-reverse
           margin-bottom 50px
 
+      .steps__text
+        font-size 20px
+
   .page-section--faq
     .page-section__inner
       .page-section__column--accordion
         .ac-trigger
           font-size 20px
+
         .ac-text
-          font-size 20px
-          line-height 1.3
+          font-size 18px
+
+        .ac-text__list-item
+          font-size 16px
+
+    .page-section__column--title
+      .section-message
+        font-size 20px
+        line-height 1.3
 
 @media (max-width 1024px)
-  .page-section.page-section--intro
+  .page-section--intro
     .page-section__column--title
       margin 0
 
 @media (max-width 768px)
-  .page-section.page-section--intro
+  .page-section--intro
     height 700px
 
     .page-section__column--title
@@ -146,8 +165,41 @@
       .illustration__cloud-left
         display none
 
+    .page-section__wrapper
+      .section-message
+        font-size 16px
+
+    .page-section__column--steps
+      .steps__item
+        &:first-child
+          margin-top -60px
+        
+        .steps__info
+          &-text
+            font-size 16px
+            padding 20px
+
+      .steps__text
+        font-size 18px
+
+  .page-section--faq
+    .page-section__column--title
+      .section-message
+        font-size 18px
+
+    .page-section__inner
+      .page-section__column--accordion
+        .ac-trigger
+          font-size 20px
+
+        .ac-text
+          font-size 16px
+
+        .ac-text__list-item
+          font-size 14px
+
 @media (max-width 550px)
-  .page-section.page-section--intro
+  .page-section--intro
     height 800px
 
     .page-section__column--title
@@ -163,8 +215,20 @@
         top -360px
         right -50px
 
+  .page-section--faq
+    .page-section__inner
+      .page-section__column--accordion
+        .ac-trigger
+          font-size 18px
+
+        .ac-text
+          font-size 14px
+
+        .ac-text__list-item
+          font-size 12px
+
 @media (max-width 425px)
-  .page-section.page-section--intro
+  .page-section--intro
     .page-section__column--illustration
       .illustration__castle
         right auto
@@ -178,10 +242,20 @@
         top 210px
         right auto
         left 170px
-   
+
+  .page-section--about
+    .page-section__column--steps
+      .steps__item
+        &:nth-child(2)
+          .steps__image
+            margin-left -70px
+
+            img
+              max-width 120%
+              width unset
 
 @media (max-width 375px)
-  .page-section.page-section--intro
+  .page-section--intro
     .page-section__column--title
       .section-message
         margin-left 15px
