@@ -1,18 +1,51 @@
 mixin header()
   header.header
-    nav.header__desktop
+    .header__desktop
       a.header__logo(href="/")
         img(src= "img/logo.svg" alt="Logo")
 
-      ul.header__menu
-        li.header__menu-item
-          a(href="#").header__menu-link About Us
-        li.header__menu-item
-          a(href="#").header__menu-link Green Spins
-        li.header__menu-item
-          a(href="#").header__menu-link VIPS for Trees
-        li.header__menu-item
-          a(href="#").header__menu-link FAQ
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item
+            a(href="#").header__menu-link About Us
+          li.header__menu-item
+            a(href="#").header__menu-link Green Spins
+          li.header__menu-item
+            a(href="#").header__menu-link VIPS for Trees
+          li.header__menu-item
+            a(href="#").header__menu-link FAQ
 
       .header__button
         +button(href="#") Impressario
+
+    .header__mobile
+      .header__actions
+        button.header__mobile-button
+          svg(width='13' height='21' viewbox='0 0 13 21' fill='none' xmlns='http://www.w3.org/2000/svg')
+            g(clip-path='url(#clip0_3022_698)')
+              circle(cx='2.94946' cy='2.52344' r='2.25' fill='#64953F')
+              circle(cx='10.4495' cy='2.52344' r='2.25' fill='#64953F')
+              circle(cx='2.94946' cy='10.1904' r='2.25' fill='#64953F')
+              circle(cx='10.4495' cy='10.1904' r='2.25' fill='#64953F')
+              circle(cx='2.94946' cy='17.8564' r='2.25' fill='#64953F')
+              circle(cx='10.4495' cy='17.8564' r='2.25' fill='#64953F')
+            defs
+              clippath#clip0_3022_698
+                rect(width='12' height='20' fill='white' transform='translate(0.699463 0.273438)')
+
+        .header__logo
+          img(src= "img/logo.svg" alt="Logo")
+
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item
+            a(href="#").header__menu-link About Us
+          li.header__menu-item
+            a(href="#").header__menu-link Green Spins
+          li.header__menu-item
+            a(href="#").header__menu-link VIPS for Trees
+          li.header__menu-item
+            a(href="#").header__menu-link FAQ
+          li.header__menu-item
+            +button(href="#") Impressario
+          

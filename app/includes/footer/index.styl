@@ -5,6 +5,7 @@
     display flex
     align-items center
     justify-content center
+    flex-wrap wrap
     gap 30px
     margin-bottom 50px
 
@@ -28,5 +29,29 @@
   &__info
     font-weight 500
     font-size 16px
+    line-height 1.5
     text-align center
     color #555
+
+//media
+@media (max-width 1024px)
+  .footer
+    &__logo
+      &-item
+        &:nth-child(1)
+          order 2
+
+        &:nth-child(2)
+          order 1
+          width 100%
+          text-align center
+
+        &:nth-child(3)
+          order 3
+
+@media (max-width 768px)
+  .footer
+    &__menu
+      &-list
+        flex-direction column
+        gap 50px

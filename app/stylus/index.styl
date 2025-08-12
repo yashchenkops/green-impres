@@ -55,6 +55,7 @@
     .illustration__scrolling
       top 85vh
       left 50%
+      transform translate(-50%, 0)
       z-index 11
 
       .scrolling__text
@@ -111,9 +112,12 @@
       &:first-child
         margin-top -100px
 
+        .steps__image
+          margin-left -160px
+
         .steps__info
           top 370px
-          right -80px
+          right 0
 
       &:nth-child(2)
         margin-top 100px
@@ -232,7 +236,7 @@
           font-family $font
           font-weight 400
           font-size 22px
-          line-height 1.7
+          line-height 1.5
           color #4f4f4f
           padding 20px 0 0 0
 
@@ -243,3 +247,5 @@
 @media screen and (min-height: 1285px)
   .illustration__scrolling
     top 1030px !important
+
+@import "media/_media-index.styl"
