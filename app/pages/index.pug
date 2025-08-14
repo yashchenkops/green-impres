@@ -2,7 +2,7 @@ extends ../includes/page
 
 block head
   -
-    title = "Impressario | Partners"
+    title = "Greenmpressario"
 
 block styles
   link(rel="stylesheet" href="css/libs.min.css")
@@ -37,6 +37,8 @@ block main
       .page-section__column.page-section__column--illustration
         .illustration__cloud-big
           img(src="img/illustration-cloud-big.webp" alt="Cloud big")
+        .illustration__cloud-big.cloud-big--mobile
+          img(src="img/illustration-cloud-big.webp" alt="Cloud big")
         .illustration__cloud-left
           img(src="img/illustration-cloud-left.webp" alt="Cloud left")
       .page-section__wrapper
@@ -56,7 +58,7 @@ block main
             .steps__info-title
               span.steps__info-action Action 02:
                 span.steps__info-name  VIPs for Trees
-            p.steps__info-text This is a pledge from Impressario Casino to donate 10 cents for every €100 of deposits made by our players to The Nature Conservancy* organization. Since 10 cents is usually the minimum amount of a free spin, we call this amount a “Green Spin”. So, next time you go for the slots’ wilds, you will also protect the wild life. With Green Spins, the planet wins.
+            p.steps__info-text This is an initiative which ensures that for every one of our VIPs, with deposits exceeding €/$1000, we plant a tree on their behalf, with the help of Tree Nation**. We have already started our own Forest of Impressario Casino, where each planted tree stands as a living testament to the generosity and commitment of our brand toward a greener planet.
           .steps__image
             img(src="img/about-image-2.webp" alt="Green spin")
           .steps__image.steps__image--mobile
@@ -75,7 +77,6 @@ block main
     .page-section__inner
       .page-section__column.page-section__column--title
         h2.section-title FAQ
-        p.section-message Please see below answers to  possible queries. If your question is not on the list, one of our Affiliate Managers will be happy to assist you.
 
       .page-section__column.page-section__column--accordion
         .ac
@@ -102,17 +103,12 @@ block main
           h2.ac-header
             button.ac-trigger(type='button') What is VIPs for Trees?
           .ac-panel
-            p.ac-text Every time one of our VIPs deposits over €/$1000, we plant a tree on their behalf through Tree Nation. Each tree is added to the Forest of Impressario and includes a personalized message for the VIP who inspired it.
+            p.ac-text Every time one of our VIPs deposits over €/$1000, we plant a tree on their behalf through Tree Nation. Each tree is added to the Forest of Impressario and stands as a living testament to the generosity and commitment of our brand toward a greener planet.
         .ac
           h2.ac-header
             button.ac-trigger(type='button') Where are the trees planted?
           .ac-panel
             p.ac-text Trees are planted around the world through Tree Nation’s reforestation projects, which also support local communities, protect biodiversity, and fight climate change.
-        .ac
-          h2.ac-header
-            button.ac-trigger(type='button') Can I see the tree planted in my name?
-          .ac-panel
-            p.ac-text Yes! VIPs receive a personalized message and a digital certificate for their tree. You’ll be able to view it in our Forest of Impressario and even track its impact.
         .ac
           h2.ac-header
             button.ac-trigger(type='button') Do I need to do anything to participate?
@@ -125,11 +121,6 @@ block main
             p.ac-text Because we believe online fun and real-world impact can go hand in hand.
         .ac
           h2.ac-header
-            button.ac-trigger(type='button') Isn’t this just greenwashing?
-          .ac-panel
-            p.ac-text No. Greenwashing means using environmental claims purely for marketing, without real action behind them. Our donations to The Nature Conservancy and our partnership with Tree Nation are transparent, trackable, and ongoing.
-        .ac
-          h2.ac-header
             button.ac-trigger(type='button') Isn’t 10 cents per €100 a tiny amount? Does it really help?
           .ac-panel
             p.ac-text On its own, it may sound small. But Green Spins are designed to accumulate with the power of the crowd. When thousands of players deposit and play, those cents add up to meaningful donations. Just like in a slot game, small spins can lead to big wins — and in this case, the win is for the planet.
@@ -140,19 +131,9 @@ block main
             p.ac-text Because everyone should. Just because we provide entertainment doesn’t mean we should ignore the world around us. We believe a business can be fun and responsible at the same time. Greenmpressario is our way of proving that you can enjoy the thrill of the game while being part of something good.
         .ac
           h2.ac-header
-            button.ac-trigger(type='button') Be honest — is this just a PR stunt?
-          .ac-panel
-            p.ac-text Greenmpressario is real. Real money goes to real environmental causes. Real trees are planted (with roots and leaves and everything). We’re not saving the planet overnight, but we’re not sitting on our hands either. And if we can spin, win, and help a forest grow while we’re at it… why not?
-        .ac
-          h2.ac-header
-            button.ac-trigger(type='button') So you’re basically saying I can save the world by gambling?
-          .ac-panel
-            p.ac-text Not quite. But we’re saying if you are going to gamble, doing it somewhere that plants trees and donates to wildlife protection sounds a lot cooler than doing it in a digital void with zero purpose.
-        .ac
-          h2.ac-header
             button.ac-trigger(type='button') Why not plant a tree for every player, not just VIPs?
           .ac-panel
             p.ac-text We would love that! But we’d also love to stay in business. So, for now, VIPs get the roots, everyone gets the Green Spins, and the planet gets the love.
 
       .page-section__column.page-section__column--button
-        +button(href="https://impressario.partners/") Impressario
+        +button(href="https://impressariocasino.com/en") Impressario
